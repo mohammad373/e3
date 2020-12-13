@@ -12,8 +12,8 @@ def __1__():
     time.sleep(1)
     print(Fore.YELLOW + "Hello . Welcome Back ;)")
     time.sleep(0.4)
-    my_list = ["goll" , "puch"]
-    rand = my_list(randint(0,1))
+    my_list = ["goll" , "puch", "goll" , "puch"]
+    rand = my_list(randint(0 , 4))
     for i in range(5):
         time.sleep(0.4)
         i10 = input(Fre.RED + "\n[" + Fore.BLUE + "!" + Fore.RED + "]" + Fore.BLUE + " ~ " + Fore.GREEN + "Pleass Enter Your Number\n1 : Goll  |  2 : Puch" + Fore.YELLOW + "  ==>  ")
