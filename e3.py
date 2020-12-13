@@ -16,7 +16,7 @@ def __1__():
     rand = my_list(random(0,1))
     for i in range(5):
         time.sleep(0.4)
-        i10 = input(Fre.RED + "\n[" + Fore.BLUE +m "!" + Fore.RED + "]" + Fore.BLUE + " ~ " + Fore.GREEN + "Pleass Enter Your Number\n1 : Goll  |  2 : Puch" + Fore.YELLOW + "  ==>  ")
+        i10 = input(Fre.RED + "\n[" + Fore.BLUE + "!" + Fore.RED + "]" + Fore.BLUE + " ~ " + Fore.GREEN + "Pleass Enter Your Number\n1 : Goll  |  2 : Puch" + Fore.YELLOW + "  ==>  ")
         if i10 == "" or None:
             try:
                 print(Fore.RED + "\nError : Your Number Is Not Found ;(")
