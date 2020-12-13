@@ -32,7 +32,7 @@ def __1__():
             time.sleep(0.5)
             print(Fore.RED + "\n[-] ~ Your Input Is Dont Ok ;(")
             time.sleep(0.5)
-        if i10 == "2" and rand == "goll"
+        if i10 == "2" and rand == "goll":
             time.sleep(0.5)
             print(Fore.RED + "\n[-] ~ Your Input Is Dont Ok ;(")
             time.sleep(0.5)
