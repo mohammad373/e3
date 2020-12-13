@@ -1,45 +1,15 @@
 # e3
 
+# clant
 
-import os
-import sys
-import time
-from random import random , randint
-from colorama import Fore
+import socket
 
-def __1__():
-    os.system("clear")
-    time.sleep(1)
-    print(Fore.YELLOW + "Hello . Welcome Back ;)")
-    time.sleep(0.4)
-    my_list = ["goll" , "puch", "goll" , "puch"]
-    rand = my_list(randint(1 , 4))
-    for i in range(5):
-        time.sleep(0.4)
-        i10 = input(Fre.RED + "\n[" + Fore.BLUE + "!" + Fore.RED + "]" + Fore.BLUE + " ~ " + Fore.GREEN + "Pleass Enter Your Number\n1 : Goll  |  2 : Puch" + Fore.YELLOW + "  ==>  ")
-        if i10 == "" or None:
-            try:
-                print(Fore.RED + "\nError : Your Number Is Not Found ;(")
-                time.sleep(0.7)
-                sys.exit()
-            except:
-                pass
-        if i10 == "1" and rand == "goll":
-            time.sleep(Fore.GREEN + "\n[+] ~ Your Won ;)")
-            time.sleep(0.4)
-            sys.exit()
-        if i10 == "1" and rand == "puch":
-            time.sleep(0.5)
-            print(Fore.RED + "\n[-] ~ Your Input Is Dont Ok ;(")
-            time.sleep(0.5)
-        if i10 == "2" and rand == "goll":
-            time.sleep(0.5)
-            print(Fore.RED + "\n[-] ~ Your Input Is Dont Ok ;(")
-            time.sleep(0.5)
-        if i10 == "1" and rand == "puch":
-            time.sleep(Fore.GREEN + "\n[+] ~ Your Won ;)")
-            time.sleep(0.4)
-            sys.exit()
-        else:
-            print(Fore.YELLOW + f"\n[!] ~ Your Have {5 - i} Time More ;)")
-__1__()
+s = socket.socket()
+port = 8500
+ip = '192.168.1.54'
+s.connect((ip, port))
+print('Connected')
+while True:
+    print(s.recv(1024).decode())
+    message = input('Your Message : ')
+    s.send(message.encode())
