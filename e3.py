@@ -4,10 +4,11 @@
 import os
 import sys
 import time
-from random import random , randint()
+from random import random , randint
 from colorama import Fore
 
 def __1__():
+    os.system("clear")
     time.sleep(1)
     print(Fore.YELLOW + "Hello . Welcome Back ;)")
     time.sleep(0.4)
